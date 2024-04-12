@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import "bootstrap-material-design/dist/css/bootstrap-material-design.min.css"
+import TopNav from "@/components/TopNav"
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Renecom",
-  description: "Ecommerce Application",
+  description: "Ecommerce App Using NextJS Full Stack",
 };
 
 export default function RootLayout({
@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body >
+        <TopNav/>
+        {children}
+        </body>
     </html>
   );
 }

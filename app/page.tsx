@@ -3,9 +3,8 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-    
-      
-  </main>
+    <div>
+      <h1 className="d-flex justify-content-center align-items-center vh-100 text-uppercase">Home</h1>
+    </div>
   );
 }
